@@ -16,7 +16,7 @@ pipeline{
                 stage('Branch A') {
                     steps {
                         echo "On Branch A"
-                        java java-helloworld.java
+                        sh 'java java-helloworld.java'
                     }
                 }
                 stage('Branch B') {
